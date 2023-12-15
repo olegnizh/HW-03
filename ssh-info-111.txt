@@ -1,0 +1,13 @@
+
+
+ssh
+https://averagelinuxuser.com/how-to-install-and-use-ssh-on-linux/
+sudo apt install openssh-server ssh 
+sudo apt install openssh-client
+sudo systemctl status sshd
+sudo systemctl status ufw
+https://www.fosslinux.com/50961/open-a-firewall-on-linux-mint.htm
+
+
+
+

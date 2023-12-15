@@ -1,0 +1,151 @@
+
+https://intercomp13.ru/menyaem-standartnye-repozitorii-dlya-ubuntu-na-mirroryandexru/
+Меняем стандартные репозитории для ubuntu на mirroryandexru
+
+https://timeweb.cloud/tutorials/nodejs/kak-ustanovit-nodejs-v-ubuntu
+
+https://github.com/altmp/alt-node
+
+https://timeweb.cloud/tutorials/nodejs/kak-ustanovit-nodejs-v-ubuntu
+https://trendoceans.com/how-to-install-and-run-node-js-in-linux/
+https://habr.com/ru/articles/95960/
+https://selectel.ru/blog/tutorials/how-to-install-node-js-on-ubuntu-20-04/
+
+===
+
+https://www.digitalocean.com/community/tutorials/how-to-install-the-apache-web-server-on-ubuntu-20-04
+
+https://github.com/nodesource/distributions
+
+https://nodejs.org/en/download/package-manager
+
+https://linux.how2shout.com/set-root-user-password-in-ubuntu-20-04-lts-focal-fossa/
+https://habr.com/ru/articles/28589/
+Статья для тех кто не знает.
+Разработчики Ubuntu решили что системе пользователь root не нужен. Вместо этого нужно использовать sudo с паролем к текущему акаунту.
+Из-за этого решения, чтобы использовать команду su, в консоли необходимо набрать:
+sudo passwd
+и задать пароль для пользователя root, тогда этот пароль можно использовать и для su
+
+https://linux.how2shout.com/steps-to-install-codeigniter-on-ubuntu-22-04-or-20-04-lts/
+https://devicetests.com/exit-root-user-ubuntu
+
+https://learn.microsoft.com/ru-ru/dotnet/core/install/linux-ubuntu-2004
+https://learn.microsoft.com/ru-ru/dotnet/core/install/linux-ubuntu
+
+
+
+
+sudo apt-get install xserver-xorg-core
+sudo reboot
+startx
+https://devhops.ru/linux/ubuntu/x.php
+sudo apt install gdm3
+
+https://devhops.ru/linux/ubuntu/x.php
+http://avreg.net/howto_x-org-server.html
+aptitude install gnome
+
+aptitude install kde-standard
+или
+# aptitude install kde-full
+
+# aptitude install xserver-xorg
+или
+# aptitude install x-window-system
+
+https://installati.one/install-xserver-xorg-ubuntu-20-04/
+
+http://avreg.net/howto_x-org-server.html  main
+
+vscode
+https://www.linuxcapable.com/install-visual-studio-code-on-ubuntu-linux/
+
+vscode
+https://www.linuxcapable.com/install-visual-studio-code-on-ubuntu-linux/
+
+sudoedit /etc/gdm3/custom.conf
+sudo systemctl restart gdm3
+
+sudo systemctl set-default multi-user
+gnome-session-quit
+sudo service gdm3 stop
+sudo systemctl disable gdm3
+sudo reboot
+
+https://tutorialspoint.co.uk/how-to-install-gdm3-on-ubuntu-20-04/
+
+
+https://www.linuxcapable.com/how-to-install-yandex-browser-on-ubuntu-linux/
+
+=== green
+https://ra1ahq.blog/linux-green-21-2-cinnamon-vs-linux-green-21-1-xfce
+https://docs.greenlinux.ru/ru/install/custom
+
+https://dataenginer.ru/?p=1772
+sudo apt-get install apache2 -y
+
+https://zalinux.ru/?p=1142
+
+https://docs.stackstorm.com/install/rhel7.html
+
+centos 8 (nodejs 18>)
+http://isoredirect.centos.org/centos/8-stream/isos/x86_64/
+https://centos.name/?page/download
+
+=== ftp centos 7
+https://routerus.com/how-to-setup-ftp-server-with-vsftpd-on-centos-7/
+
+https://losst.pro/ustanovka-ftp-na-ubuntu-16-04
+
+=== rosa
+https://dzen.ru/a/YkxTBE7jv0kCAXcv
+https://www.rosalinux.ru/rosa-linux-download-links/
+
+
+=== nodejs
+https://www.mo4tech.com/nodejs-8-express.html
+https://metanit.com/web/nodejs/4.1.php
+https://www.npmjs.com/package/express/v/4.18.2
+https://sysadminwiki.ru/wiki/Установка_Интернет-сервера_на_Alt_Linux
+https://www.npmjs.com/package/pg
+
+https://nodejs.org/download/release/latest-v18.x/
+
+https://www.golinuxcloud.com/install-nodejs-ubuntu-from-tar-xz/
+
+https://www.npmjs.com/package/node-linux-x64
+
+https://www.techtransit.org/install-node-js-source-on-centos-rhel-linux/
+
+https://www.altlinux.org/Branches/Sisyphus
+https://linux.ru/forum/topic/170517-как-в-alt-linux-добавить-репозиторий-sisyphus/
+
+https://vk.com/topic-110163116_33450848
+apt-repo add sisyphus
+
+https://ru.hexlet.io/blog/posts/zachem-izuchat-node-js-ili-o-perspektivah-bekenda-na-javascript
+
+https://questu.ru/articles/204850/ node man
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

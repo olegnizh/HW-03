@@ -1,0 +1,175 @@
+
+https://learn.microsoft.com/ru-ru/ef/core/managing-schemas/migrations/?tabs=dotnet-core-cli
+В реальных проектах модели данных изменяются по мере реализации функций. 
+При добавлении или изменении новых сущностей или свойств схемы базы данных должны быть соответствующим 
+образом изменены для синхронизации с приложением. 
+Функция миграции в EF Core позволяет последовательно применять изменения схемы к базе данных, 
+чтобы синхронизировать ее с моделью данных в приложении без потери существующих данных.
+
+https://www.entityframeworktutorial.net/efcore/entity-framework-core.aspx
+The following table lists database providers and NuGet packages for EF Core.
+SQL Server	Microsoft.EntityFrameworkCore.SqlServer
+MySQL	    MySql.Data.EntityFrameworkCore
+PostgreSQL	Npgsql.EntityFrameworkCore.PostgreSQL
+SQLite	    Microsoft.EntityFrameworkCore.SQLite
+SQL Compact	EntityFrameworkCore.SqlServerCompact40
+In-memory	Microsoft.EntityFrameworkCore.InMemory
+
+NuGet\Install-Package EntityFrameworkCore.Jet -Version 3.1.1
+Install-Package EntityFrameworkCore.Jet -Version 3.1.1
+Install-Package EntityFrameworkCore.Jet -Version 3.1.1
+EntityFrameworkCore.Jet.Data (>= 3.1.1)
+Microsoft.EntityFrameworkCore (>= 3.1.22 && < 5.0.0)
+Microsoft.EntityFrameworkCore.Relational (>= 3.1.22 && < 5.0.0)
+
+Install-Package EntityFrameworkCore.Jet -Version 2.2.0 (netframework)
+
+Install-Package EntityFrameworkCore.Jet -Version 3.1.1
+https://stackoverflow.com/questions/64277261/entityframeworkcore-jet-returns-an-error-when-trying-to-connect-to-ms-access-db
+
+Install-Package Npgsql.EntityFrameworkCore.PostgreSQL -Version 3.1.4
+Install-Package Microsoft.EntityFrameworkCore.Tools -Version 3.1.3
+Enables these commonly used commands:
+Add-Migration
+Drop-Database
+Get-DbContext
+Scaffold-DbContext
+Script-Migrations
+Update-Database
+
+Install-Package Microsoft.EntityFrameworkCore.Sqlite -Version 2.1.4
+Install-Package FirebirdSql.EntityFrameworkCore.Firebird -Version 7.1.1
+Install-Package Microsoft.EntityFrameworkCore.Tools -Version 2.1.4
+
+dotnet add package Microsoft.EntityFrameworkCore.Design
+dotnet tool update --global dotnet-ef
+dotnet tool uninstall --global dotnet-ef
+dotnet tool install --global dotnet-ef --version  3.1.8  7.0.10  6.0.8
+dotnet tool install --local dotnet-ef --version 5.0.5
+dotnet ef migrations add Database_v0
+dotnet ef migrations add InitialCreate
+dotnet ef migrations remove
+dotnet ef migrations remove –force
+dotnet ef database update
+dotnet ef database drop
+dotnet ef dbcontext list
+dotnet ef database update --context ApplicationDbContext
+
+dotnet ef migrations add <your_migration_name> -c <your_context_class_name>
+More than one DbContext was found. Specify which one to use
+https://chanmingman.wordpress.com/2021/11/28/more-than-one-dbcontext-was-found-specify-which-one-to-use/
+
+===
+Enables these commonly used dotnet-ef commands:
+dotnet ef migrations add
+dotnet ef migrations list
+dotnet ef migrations script
+dotnet ef dbcontext info
+dotnet ef dbcontext scaffold
+dotnet ef database drop
+dotnet ef database update
+
+Install-Package Microsoft.EntityFrameworkCore.Tools
+Add-Migration InitialCreate
+Update-Database
+
+==
+Управление схемой БД и миграции
+https://metanit.com/sharp/entityframeworkcore/2.15.php
+
+EF Core Update-Database
+https://www.learnentityframeworkcore.com/migrations/update-database
+
+Data Annotations Table Attribute in EF Core
+https://www.tektutorialshub.com/entity-framework-core/data-annotations-table-attribute-in-ef-core/
+
+https://forproger.ru/article/nachalo-raboty-s-entity-framework-core-v-aspnet-core-modeli-dbcontext-konfiguraciya
+https://www.thecodebuzz.com/configure-dbcontext-entity-framework-efcore-asp-net-core/
+https://learn.microsoft.com/en-us/ef/core/dbcontext-configuration/
+https://metanit.com/sharp/aspnet6/12.1.php
+
+
+
+https://github.com/ffernandolima/ef-core-data-access
+
+validation
+https://learn.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/validation?view=aspnetcore-8.0
+
+
+.NET 6.0 - Role Based Authorization Tutorial with Example API
+https://jasonwatmore.com/post/2022/02/18/net-6-role-based-authorization-tutorial-with-example-api
+
+ASP.NET Core authentication principle and Implementation
+https://programming.vip/docs/asp.net-core-authentication-principle-and-implementation.html
+
+Microsoft.AspNetCore.Authentication.OpenIdConnect Namespace
+https://docs.huihoo.com/dotnet/aspnet/api/1.0.0/autoapi/Microsoft/AspNetCore/Authentication/OpenIdConnect/index.html
+
+https://yatalks2023.com/ru?utm_source=banner&utm_medium=social&utm_campaign=5642743&utm_content=banneryandex&utm_term=code
+https://yatalks2023.com/ru/codex?utm_source=banner&utm_medium=social&utm_campaign=5642743&utm_content=banneryandex&utm_term=code
+
+https://vk.com/yandex4developers
+
+
+=== pg
+https://polyakovdmitriy.ru/postgresql-node/
+
+https://rukovodstvo.net/posts/id_836/
+
+https://node-postgres.com/
+
+https://cheatcode.co/tutorials/how-to-use-postgresql-with-node-js
+
+https://stackabuse.com/using-postgresql-with-nodejs-and-node-postgres/
+
+https://www.npmjs.com/package/postgres
+https://www.npmjs.com/package/pg
+
+https://www.altlinux.org/PostgreSQL
+/etc/init.d/postgresql initdb
+
+===
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
