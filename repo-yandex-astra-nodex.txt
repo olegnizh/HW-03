@@ -1,0 +1,110 @@
+
+https://blog.altuninvv.ru/статьи/os/linux/158-используем-репозитории-яндекса-для-apt-в-debian-и-ubuntu-используем-зеркала-в-рф-для-установки-по-часть-2
+
+https://blog.altuninvv.ru/статьи
+
+https://forum.astralinux.ru/threads/2428/
+
+https://st-ovk.ru/kak-nastroit-zerkalo-linux/
+
+https://shhost.ru/chto-sluchilos-s-mirroryandexru/
+
+
+nodejs : Зависит: libc6 (>= 2.28) но 2.24-11+deb9u4+ci202304051733+astra4 будет установлен
+
+
+
+curl -s URL/name.pub | sudo gpg --no-default-keyring --keyring gnupg-ring:/etc/apt/trusted.gpg.d/ИМЯ.gpg --import
+
+curl -s URL/name.pub | sudo gpg --no-default-keyring --keyring gnupg-ring:/etc/apt/trusted.gpg.d/ИМЯ.gpg --import
+
+https://mirror.yandex.ru/debian/dists/buster/
+
+Release.gpg
+
+curl -fsSL https://deb.nodesource.com/gpgkey/nodesource-repo.gpg.key | sudo gpg --dearmor -o /etc/apt/keyrings/nodesource.gpg
+
+curl -fsSL https://mirror.yandex.ru/debian/dists/buster/Release.gpg sudo gpg --dearmor -o /etc/apt/keyrings/buster.gpg
+
+
+
+sudo add-apt-repository deb [trusted=yes] http://mirror.yandex.ru/debian/ booster main
+
+
+sudo add-apt-repository "deb [trusted=yes] http://mirror.yandex.ru/ubuntu/ bionic main
+Источник: https://sinospaces.ru/igry/kak-dobavit-repozitorii-yandex-mirror
+
+
+
+alex@astra:~$ sudo tee /etc/apt/sources.list.d/yandex.list <<EOF
+> Источник: https://inlermontov.ru/kak-dobavit-repozitorii-yandeks-mirror
+
+wget https://repo.yandex.ru/yandex-browser/YANDEX-BROWSER-KEY.GPG -O- | sudo apt-key add -
+
+wget https://mirror.yandex.ru/debian/dists/buster/Release.gpg -O- | sudo apt-key add -
+
+
+===
+https://forum.astralinux.ru/threads/2105/
+=== astra install nodejs
+ставил вручную v16:
+wget https://nodejs.org/dist/v16.18.0/node-v16.18.0-linux-x64.tar.xz
+sudo mkdir -p /usr/local/lib/nodejs
+VERSION=v16.18.0
+DISTRO=linux-x64
+sudo tar -xJvf ./node-$VERSION-$DISTRO.tar.xz -C /usr/local/lib/nodejs
+sudo ln -s /usr/local/lib/nodejs/node-$VERSION-$DISTRO/bin/node /usr/bin/node
+sudo ln -s /usr/local/lib/nodejs/node-$VERSION-$DISTRO/bin/npm /usr/bin/npm
+sudo ln -s /usr/local/lib/nodejs/node-$VERSION-$DISTRO/bin/npx /usr/bin/npx
+Обновляем npm
+sudo npm install -g npm@9.1.2
+
+no
+https://nodejs.org/dist/latest-v18.x/node-v18.19.0-linux-x64.tar.xz
+https://nodejs.org/dist/latest-v20.x/node-v20.10.0-linux-x64.tar.xz
+VERSION=v20.10.0
+DISTRO=linux-x64
+wget https://nodejs.org/dist/latest-v20.x/node-v20.10.0-linux-x64.tar.xz
+
+
+===
+
+https://roma.msk.ru/2023/06/08/перестал-обновляться-яндекс-браузер/
+
+wget https://repo.yandex.ru/yandex-browser/YANDEX-BROWSER-KEY.GPG -O- | sudo apt-key add -
+
+Ошибка GPG недоступен открытый ключ
+https://losst.pro/oshibka-gpg-nedostupen-otkrytyj-klyuch
+
+https://b14esh.com/nix/debian/debian-apt/debian-11-apt-key.html
+
+=== dotnet
+https://linuxways.net/debian/how-to-install-net-5-on-debian-10/
+https://learn.microsoft.com/en-us/dotnet/core/install/linux-debian
+
+wget https://packages.microsoft.com/config/debian/10/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
+sudo dpkg -i packages-microsoft-prod.deb
+rm packages-microsoft-prod.deb
+
+dotnet-sdk-3.1
+sudo apt-get update && \
+  sudo apt-get install -y dotnet-sdk-7.0
+  
+=== vscode
+https://routerus.com/how-to-install-visual-studio-code-on-debian-10/
+sudo apt update
+sudo apt install software-properties-common apt-transport-https curl
+curl -sSL https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
+sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
+sudo apt update
+sudo apt install code
+
+
+
+  
+
+
+
+
+
+

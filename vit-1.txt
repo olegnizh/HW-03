@@ -1,0 +1,102 @@
+
+Виртауальная машина VMware 5.5
+
+Windows 10 (Edge) 
++ Node.js 20 + npm (менеджер пакетов) - для JavaScript разработки - текущая актуальная версия !
++ Excel 2007 
++ Postgresql 9.6 + pgAdmin3 (ru) 
++ ConEmu (терминал линуксовый)
++ Notepad++ (текстовый редактоп)
++ Visual Studio Code - специализированный текстовый редактор для программиста JavaScript, dotnet, PHP, Java и др
++ dotnet 3.1 sdk
+не очищенный размер
+12,9 Гб
+
+Simply Linux 10 (ООО «Базальт СПО» — российский разработчик операционных систем «Альт»)
+Лицензия своюодная
+Полноценная рабочая станция изначально
++ Office
++ Node.js 16 + npm (менеджер пакетов) - для JavaScript разработки
++ dotnet 2.1 sdk (core), 3.1 sdk (aspnetcore, core), 6.0 sdk (aspnetcore, core)
++ codium (Visual Studio Code - специализированный текстовый редактор для программиста JavaScript, dotnet, PHP, Java и др)
++ Postgresql 10 + pgAdmin3
++ ssh-сервер, ftp-сервер
+16,9 Гб
+
+Green Linux (mint)
+Полноценная рабочая станция изначально (возможна минимальная установка)
+репозитории Yandex
++ Yandex броузер
++ Office
++ Node.js (изначально 12) успешно установил 20 актуальную (+ npm)
++ успешно установил Visual Studio Code - специализированный текстовый редактор для программиста JavaScript, dotnet, PHP, Java и др
+из менеджера программ
++ dotnet 6.0 sdk (успешно установил) + dotnet 7.0 sdk - (все изначально в репозиториях)
++ postgresql14 + pgdbf (конвертер из DBF) + pg-cli + postgresql-14-cron (планировщик задач)
++ ssh-сервер, ftp-сервер
++ apache2 (web сервер)
+есть в репозиториях kdevelop 4 (cpp devel), kdevelop-php
+https://www.thegeekstuff.com/2016/05/phppgadmin-setup/
++ php 8.1.2 + phppgadmin  (успешно установил)
+Таким образом машина может быть как сервером так и для разработки (с Visual Studio Code)
+18 Гб
+
+pgadmin4 не установил
+https://handynotes.ru/2020/11/pgadmin4-linux-mint-20-ulyana.html
+Warning: apt-key is deprecated (РЕШЕНО)
+https://zalinux.ru/?p=5066
+curl -s https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo gpg --no-default-keyring --keyring gnupg-ring:/etc/apt/trusted.gpg.d/ACCC4CF8.gpg --import
+
+Ubuntu 20.4
+Устанавливал изначально сервер (по дефолту работает как сервер)
++ php 7.4.3
++ ssh-сервер, ftp-сервер
++ apache2
++ успешно установил Node.js 18 + npm
++ успешно дополнительно установил графическую среду (Гном 3) - вызывается по надобности
+sudo systemctl start gdm3
++ успешно установил Yandex броузер
++ успешно установил Visual Studio Code - специализированный текстовый редактор для программиста JavaScript, dotnet, PHP, Java и др
+(для разработчика) - интересовала возможность профессиональной разработки на прогрессивном JavaScript фреймворке Vue3, технически требующая Node.js >16 версии
++ установил codeigniter 4
++ postgres 12 bp репозиторий по умолчанию
+https://ubuntu.com/server/docs/databases-postgresql
+sudo apt install postgresql
+sudo apt install postgresql-client
+pg_ctlcluster 12 main start
++ ufw остановлен (firewall)
+https://selectel.ru/blog/tutorials/how-to-install-and-use-postgresql-on-ubuntu-20-04/
++ php-pgsql успешно установил
+Таким образом машина может быть как сервером так и для разработки (с Visual Studio Code)
+6,6 Гб
+
+Alt server 8 common (ООО «Базальт СПО» — российский разработчик операционных систем «Альт»)
+Рабочая станция с офисом (графический интерфейс) и/или сервер
++ postgresql
++ sshd (удаленное управление)
++ apache2 
++ dotnet 2.1 sdk (aspnetcore, core)
++ Node.js 8 + npm (возможно использование библиотек - для бэкенда напр. Express успешно установился),
+а например работа с фронтенд Vue3 не возможна (требуется более высокая версия)
++ php 7.2.34 (php7 + php7-pdo + php7-pdo_sqlite, php7_pdo_pgsql)
+
+lemp server
+https://blog.altuninvv.ru/simply/171-lemp-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80-%D1%87%D0%B0%D1%81%D1%82%D1%8C-2-c%D0%B5%D1%80%D0%B2%D0%B5%D1%80-%D0%BD%D0%B0-%D0%B1%D0%B0%D0%B7%D0%B5-alt-linux-%D0%B1%D0%B0%D0%B7%D0%B0%D0%BB%D1%8C%D1%82-%D1%81%D0%BF%D0%BE
+
+https://vegibit.com/how-to-use-postgresql-with-php/
+https://info-comp.ru/programmirovanie/451-php-postgresql.html
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
